@@ -23,10 +23,10 @@ router.post(
 
         const eventIndex = targetUser.eventScores.findIndex(e => e.eventCode === eventCode);
         if (eventIndex >= 0) {
-          // Update existing event
+
           targetUser.eventScores[eventIndex].points += points;
         } else {
-          // Add new event score
+
           targetUser.eventScores.push({ eventCode, points });
         }
 
